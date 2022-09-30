@@ -1,0 +1,478 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
+header{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  box-shadow: 00px 3px 3px 2px  rgba(64, 66, 68, .25);
+  text-decoration: none;
+  background-color: rgb(255, 255, 255, .7);
+  height: 128px;
+  width: 100%;
+}
+
+button{
+  width: 165px;
+  height: 42px;
+  background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%);
+  border: none;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 4px;
+font-family: 'Century Gothic';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+letter-spacing: 0.0125em;
+cursor: pointer;
+position: relative;
+transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+/*start*/
+
+
+
+
+button:before, button:after {
+ 
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  border-radius: 4px;
+}
+
+/* On Hover the 'before' sudo element's is added an opacity of 0 and the */
+/* element is scaled to 2 times. */
+button:hover:before {
+  animation: anim 500ms ease forwards ;
+  border: 5px solid #C84E89;
+}
+
+.buttonClicked:after {
+  animation: anim 500ms ease forwards ;
+  border: 5px solid #C84E89;
+}
+
+
+
+@keyframes anim {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    border: 5px solid #C84E89;
+  }
+  50% {
+    border-color: #C84E89;
+  }
+  100% {
+    transform: scale( 1.2, 2);
+    opacity: 0;
+    border: 0px solid #C84E89;
+  }
+}
+
+
+ 
+
+/*end*/
+
+
+
+
+
+
+
+nav img {
+display: flex;
+margin-left: 64px;
+margin-right: 24px;
+}
+
+.underline {
+  position: relative
+ }
+ 
+.underline::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 6px;
+  background: linear-gradient(0.25turn, #C84E89, #F15F79);
+}
+
+.navRight{
+  display: flex;
+  padding-right: 64px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.navLeft{
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+/*
+.navRight h6 {
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  padding-top: 4px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.0);
+  
+}
+
+.navRight h6:hover {
+
+  border-image: linear-gradient(0.25turn, #C84E89, #F15F79);
+  border-image-slice: 1;
+  cursor: pointer;
+  
+}
+
+.navRight h6.active {
+  border-image: linear-gradient(0.25turn, #C84E89, #F15F79);
+  border-image-slice: 1;
+  
+}
+*/
+
+.wrapper{
+  display: grid;
+margin:auto;
+  grid-row-gap: 64px;
+  grid-column-gap: 64px;
+  grid-template-columns: 64px 1fr 1fr 64px;
+  grid-template-rows: 3fr;
+min-width: 1316px;
+  max-width: 1920px;
+  grid-template-areas:
+  ". hero hero ."
+  ". card1 card2 ."
+  ". card3 card4 ."
+;
+}
+
+
+
+footer{
+  grid-area: footer;
+  height: 100%;
+  width: 100%;
+  margin-top: 128px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  background-color: #232526;
+  padding: 32px;
+}
+
+.footerImage{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  opacity: .05;
+ overflow:hidden;
+ 
+ position: absolute;
+ width: 100%;
+ overflow:hidden;
+}
+
+.footerImage img{
+
+height: 512px;
+overflow:visible;
+
+}
+
+.link{
+  display: flex;
+  flex-direction: row;
+align-items: center;
+justify-content: left;
+
+}
+
+.link img{
+  padding: 32px;
+}
+
+.hero{
+  grid-area: hero;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 128px;
+  margin-bottom: 0;
+  text-align: Left;
+  width: 100%;
+  padding: 16px;
+}
+
+.cloudCase{
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  width: 100%;
+  justify-content: space-evenly;  
+ 
+}
+
+#cloud1{
+  align-self: flex-start;
+}
+
+#cloud2{
+  align-self: center;
+}
+
+#cloud3{
+  align-self: flex-end;
+}
+
+#cloud1:hover, #cloud2:hover, #cloud3:hover {
+  position: relative;
+  animation-name: animCloud;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  animation-fill-mode: both;
+}
+
+@keyframes animBob {
+  0%   {left:0px; top:0px;}
+  50%  {left:0px; top:10px;}
+  100%  {left:0px; top:0px;}
+  
+}
+
+@keyframes animCloud {
+  0%   {left:0px; top:0px;}
+  25%  {left:5px; top:5px;}
+  50%  {left:0px; top:10px;}
+  75%  {right:5px; top:5px;}
+  100%  {left:0px; top:0px;}
+}
+
+
+
+
+
+#readMore1{
+  grid-area: readMoreButton;
+
+padding-top: 32px;
+align-self: flex-end;
+justify-self: baseline;
+
+
+}
+
+
+
+#caseStudy1{
+  grid-area: card1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: fit-content 1fr 1fr;
+    grid-template-areas:
+  "caseStudyImg"
+  "caseStudyTitle"
+  "readMoreButton"
+;
+
+}
+
+#caseStudy2{
+  grid-area: card2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: fit-content 1fr 1fr;
+    grid-template-areas:
+  "caseStudyImg"
+  "caseStudyTitle"
+  "readMoreButton"
+;
+}
+
+
+#caseStudy3{
+  grid-area: card3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: fit-content 1fr 1fr;
+    grid-template-areas:
+  "caseStudyImg"
+  "caseStudyTitle"
+  "readMoreButton"
+;
+}
+
+#caseStudy4{
+  grid-area: card4;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: fit-content 1fr 1fr;
+    grid-template-areas:
+  "caseStudyImg"
+  "caseStudyTitle"
+  "readMoreButton"
+;
+}
+
+
+.caseStudyImg{
+  grid-area: caseStudyImg;
+ 
+}
+
+.caseStudyImg img{
+  width: 100%;
+  
+  
+  
+}
+
+
+
+
+.caseStudyTitle{
+  grid-area: caseStudyTitle;
+ text-align: left;
+ height: fit-content;
+}
+
+
+
+h1{
+
+  font-family: 'Caviar Dreams';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 122px;
+  height: 444px;
+  text-align: right;
+  letter-spacing: -0.0154em;
+  text-transform: uppercase;
+  }
+
+h2{
+font-family: 'Caviar Dreams';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 76px;
+height: 15px;
+text-align: left;
+letter-spacing: -0.005em;
+margin-top: 0;
+
+}
+
+
+h3{
+  font-family: 'Quicksand';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 60px;
+margin: 0;
+
+
+}
+
+h4{
+  font-family: 'Century Gothic';
+font-style: normal;
+font-weight: 700;
+font-size: 34px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.0025em;
+margin: 0px;
+
+
+}
+
+h5{
+  font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+margin: 0px;
+
+}
+
+h6{
+  font-family: 'Quicksand';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 25px;
+text-align: left;
+letter-spacing: 0.0015em;
+
+margin: 0;
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+ 
+  .wrapper{
+    display: grid;
+  margin:auto;
+    grid-row-gap: 64px;
+    grid-column-gap: 64px;
+    grid-template-columns: 16px 1fr 16px;
+    grid-template-rows: 5fr;
+  min-width: 1316px;
+    max-width: 1920px;
+    grid-template-areas:
+    ". hero ."
+    ". card1 ."
+    ". card2 ."
+    ". card3 ."
+    ". card4 ."
+  ;
+  }
+
+}
