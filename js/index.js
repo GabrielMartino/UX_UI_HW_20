@@ -12,3 +12,4 @@ $("button").click(function() {
       $(this).removeClass('buttonClicked');
     });
 	});
+
