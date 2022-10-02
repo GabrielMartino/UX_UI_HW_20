@@ -15,6 +15,7 @@ header{
 
 .heroIMG{
   transform: translateY(128px);
+  position: relative;
 }
 
 .arrow{
