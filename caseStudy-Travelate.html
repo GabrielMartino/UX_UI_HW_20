@@ -39,12 +39,12 @@
          </ul>
          <ul class="navbar-nav d-flex justify-content-end mb-2 mb-lg-0">
            <li class="nav-item">
-             <h6><a href="index.html" class="link-dark">My Work</a></h6>
+             <h6><a href="index.html" class="link-dark navHov">My Work</a></h6>
            </li>
          </ul>
            <ul class="navbar-nav d-flex justify-content-end mb-2 mb-lg-0">
            <li class="nav-item">
-             <h6><a href="AboutMe.html" class="link-dark">About Me</a></h6>
+             <h6><a href="AboutMe.html" class="link-dark navHov">About Me</a></h6>
            </li>
          </ul>
          <ul class="navbar-nav d-flex justify-content-end mb-2 mb-lg-0">
@@ -64,81 +64,61 @@
 
 
  <div class="container-flex col-xxl-12 px-4 p-5 bg-trasparent banner1 w-100 d-flex justify-content-center align-items-center">
-  <div class="row flex-lg-row g-5 align-items-center">
+  <div class="row flex-lg-row g-5 align-items-center justify-content-center ">
    
-    <div class="col-lg-6 col-sm-12  align-items-center">
+    <div class="col-lg-6 col-sm-12  align-items-center text-center">
       <h1 class="display-1 fw-bold lh-1 mb-3">TRAVELATE</h1>
       <h4 class="lead">Mobile travel app case study</h4>
     </div>
-     <div class="col-6 col-sm-12 col-lg-6">
-      <img src="images/CaseStudy-Travelate/banner/img-banner.png" class="d-block mx-lg-auto img-fluid align-self-baseline" alt="Bootstrap Themes" loading="lazy">
+     <div class="col-6 col-sm-12 col-lg-6 align-items-center text-center justify-content-center">
+      <img src="images/CaseStudy-Travelate/banner/img-banner.png" class="d-block mx-lg-auto img-fluid align-self-center justify-self-center" alt="Bootstrap Themes" loading="lazy"">
     </div>
   </div>
 </div>
 
+
+
 <!--side bar--> 
-<div class="sticky-top d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
-  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-    <span class="fs-4">Sidebar</span>
-  </a>
-  <hr>
-  <ul class="nav nav-pills flex-column mb-auto">
-    <li class="nav-item">
-      <a href="#" class="nav-link active" aria-current="page">
-        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-        Home
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link link-dark">
-        <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-        Dashboard
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link link-dark">
-        <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-        Orders
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link link-dark">
-        <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-        Products
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link link-dark">
-        <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-        Customers
-      </a>
-    </li>
-  </ul>
-  <hr>
-  <div class="dropdown">
-    <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-      <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-      <strong>mdo</strong>
-    </a>
-    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2" style="">
-      <li><a class="dropdown-item" href="#">New project...</a></li>
-      <li><a class="dropdown-item" href="#">Settings</a></li>
-      <li><a class="dropdown-item" href="#">Profile</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Sign out</a></li>
-    </ul>
+
+ 
+  <div id="list-example" class="list-group sticky-top d-flex flex-column flex-shrink-0 p-3 bg-light row" style="height: fit-content; width: 300px;">
+    <br>
+    <a class="list-group-item list-group-item-action sideNavItem" href="#list-item-1">01. OVERVIEW</a>
+    <br>
+    <a class="list-group-item list-group-item-action sideNavItem" href="#list-item-2">02. RESEARCH</a>
+    <br>
+    <a class="list-group-item list-group-item-action sideNavItem" href="#list-item-3">03. DEFINITION</a>
+    <br>
+    <a class="list-group-item list-group-item-action sideNavItem" href="#list-item-4">04. IDEATION</a>
+    <br> 
+    <a class="list-group-item list-group-item-action sideNavItem" href="#list-item-5">05. DESIGN</a>
+    <br>
+    <a class="list-group-item list-group-item-action sideNavItem" href="#list-item-6">06. USABILITY TESTING</a>
+    <br>
+    <a class="list-group-item list-group-item-action sideNavItem" href="#list-item-7">07. INTERACTIVE PROTOTYPE</a>
+    <br>
+    <a class="list-group-item list-group-item-action sideNavItem" href="#list-item-8">08. FINAL THOUGHTS</a>
+    <br>
   </div>
-</div>
+ 
+ 
+
+
+
+
+
+
 <!--side bar--> 
 
 
 <!--overview--> 
-<div class="container col-xxl-12 py-5">
+<section  data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="10" class="scrollspy-example col-md-12 row" tabindex="0" style="padding-left:300px; transform: translateY(-400px);">
+<div id="list-item-1">
+  <div class="container col-xxl-12 py-5">
   <div class="col-md-12 mb-3 py-3">
   <h2><span class="sectionTitle">01 Overview</span></h2>
   </div>
-    <div class="col-md-12 mb-3 py-1">
+    <div class="col-md-12 mb-3 py-1 ">
         <h5>Travelers need a new way to plan their trips with confidence. Our team has come together to define the current pain points of travel and develop a mobile app to help travelers navigate their planning journey.</h5>
     </div>
 
@@ -211,33 +191,33 @@
       <div class="py-5">
       <h5>My process was based on the Double Diamond Theory UX Process. The dynamic nature of the project cycled back and forth multiple times from the beginning to the end. I aimed to incorporate the key phases of Empathise, Define, Ideate, Implement, Test & Iterate.</h5>
     </div>
-    <img src="images/CaseStudy-Travelate/01-overview/vector-doubleDiamond.svg" class="w-100 py-4">
+    <img src="images/CaseStudy-Travelate/01-overview/vector-doubleDiamond.svg" class="w-100 py-4 ">
  
  
     <div class="col-md-12 mb-3 py-4">
       <div class="d-grid gap-5 d-sm-flex py-4 justify-content-between">
         <div class="text-center">
-          <img src="images/CaseStudy-Travelate/icons/vector-empathise.svg" class="tiltElement2" alt="...">
+          <img src="images/CaseStudy-Travelate/icons/vector-empathise.svg" class="tiltElement2 img-fluid" alt="...">
         <h5>EMPATHISE</h5>
         </div>
       
         <div class="text-center">
-          <img src="images/CaseStudy-Travelate/icons/vector-define.svg"class="tiltElement2" alt="...">
+          <img src="images/CaseStudy-Travelate/icons/vector-define.svg"class="tiltElement2 img-fluid" alt="...">
           <h5>DEFINE</h5>
         </div>
       
         <div class="text-center">
-          <img src="images/CaseStudy-Travelate/icons/vector-ideate.svg"class="tiltElement2" alt="...">
+          <img src="images/CaseStudy-Travelate/icons/vector-ideate.svg"class="tiltElement2 img-fluid" alt="...">
           <h5>IDEATE</h5>
         </div>
       
         <div class="text-center">
-          <img src="images/CaseStudy-Travelate/icons/vector-design.svg"class="tiltElement2" alt="...">
+          <img src="images/CaseStudy-Travelate/icons/vector-design.svg"class="tiltElement2 img-fluid" alt="...">
           <h5>DESIGN</h5>
         </div>
         
         <div class="text-center">
-          <img src="images/CaseStudy-Travelate/icons/vector-test.svg"class="tiltElement2" alt="...">
+          <img src="images/CaseStudy-Travelate/icons/vector-test.svg"class="tiltElement2 img-fluid" alt="...">
           <h5>Testing</h5>
 
         </div>
@@ -247,9 +227,10 @@
   </div>
 </div>
 <!--design thinking process--> 
-
-<!--research--> 
-<div class="bgTravelate">
+</div>
+<!--02 research--> 
+<div id="list-item-2">
+<div class="bgTravelate" id="02">
 <div class="container col-xxl-12 py-5">
   <div class="d-flex justify-content-between col-md-12 mb-3 py-3">
   <h2><span class="sectionTitle">02 Research</span></h2>
@@ -323,7 +304,7 @@
         
         <div class="d-flex justify-content-between align-items-center col-md-12 mb-3 py-1">
           <h4>Categorised Insights</h4>
-          <p style="border-bottom: solid #2e2e2e 1px;">LINK TO MIRO</p>
+          <a class="linkto" target="_blank" href="https://miro.com/app/board/uXjVOnbRP7g=/?share_link_id=778828513686">LINK TO MIRO</a>
           </div>
       <img src="images/CaseStudy-Travelate/02-research/img-categorisedInsights.png" class="w-100 py-4">
     </div>
@@ -344,7 +325,7 @@
         
         <div class="d-flex justify-content-between align-items-center col-md-12 mb-3 py-1">
           <h4 class="py-1">User Persona</h4>
-          <p style="border-bottom: solid #2e2e2e 1px;">LINK TO MIRO</p>
+          <a class="linkto" target="_blank" href="https://miro.com/app/board/uXjVOnbRP7g=/?share_link_id=778828513686">LINK TO MIRO</a>
           </div>
       <img src="images/CaseStudy-Travelate/02-research/img-persona.png" class="w-100 py-4">
 
@@ -359,9 +340,10 @@
 
 
 <!--Creating an Empathetic Link--> 
-
+</div>
 
 <!--03 Definition--> 
+<div id="list-item-3">
 <div class="bgPadding">
   <div class="container col-xxl-12 py-5">
     <div class="d-flex justify-content-between col-md-12 mb-3 py-3">
@@ -420,9 +402,10 @@
   </div>
 
 <!--the situation--> 
-
+</div>
 
 <!--04 Ideation--> 
+<div id="list-item-4">
 <div class="bgPadding">
   <div class="container col-xxl-12 py-5">
     <div class="d-flex justify-content-between col-md-12 mb-3 py-3">
@@ -445,7 +428,7 @@
 
     <div class="d-flex justify-content-between align-items-center col-md-12 mb-3">
       <h4>Prioritisation Matrix</h4>
-      <p style="border-bottom: solid #2e2e2e 1px;">LINK TO MIRO</p>
+      <a class="linkto" target="_blank" href="https://miro.com/app/board/uXjVOnbRP7g=/?share_link_id=778828513686">LINK TO MIRO</a>
       </div>
   <img src="images/CaseStudy-Travelate/04-ideation/img-prioritisationMatrix.png" class="w-100">
   </div>
@@ -591,7 +574,7 @@
         
         <div class="d-flex justify-content-between align-items-center col-md-12 mb-3 py-1">
           <h4 class="py-1">Value Proposition </h4>
-          <p style="border-bottom: solid #2e2e2e 1px;">LINK TO MIRO</p>
+          <a class="linkto" target="_blank" href="https://miro.com/app/board/uXjVOnbRP7g=/?share_link_id=778828513686">LINK TO MIRO</a>
           </div>
       <img src="images/CaseStudy-Travelate/04-ideation/img-valueProposition.png" class="w-100 py-4">
 
@@ -602,8 +585,9 @@
 
 
 <!--Assessing the Value--> 
-
+</div>
 <!--05 Design--> 
+<div id="list-item-5">
 <div class="bgPadding">
   <div class="container col-xxl-12">
     <div class="d-flex justify-content-between col-md-12 mb-3 py-3">
@@ -622,7 +606,7 @@
         
         <div class="d-flex justify-content-between align-items-center col-md-12 mb-3 py-1">
           <h4 class="py-1">Task Outline</h4>
-          <p style="border-bottom: solid #2e2e2e 1px;">LINK TO MIRO</p>
+          <a class="linkto" target="_blank" href="https://miro.com/app/board/uXjVOnbRP7g=/?share_link_id=778828513686">LINK TO MIRO</a>
           </div>
       <img src="images/CaseStudy-Travelate/05-design/img-taskOutline.png" class="w-100 py-4">
 
@@ -693,7 +677,7 @@
 
   <div class="d-flex justify-content-between align-items-center col-md-12 mb-3 py-1">
     <h4 class="py-1">Mapping the User Flow</h4>
-    <p style="border-bottom: solid #2e2e2e 1px;">LINK TO MIRO</p>
+    <a class="linkto" target="_blank" href="https://miro.com/app/board/uXjVOnbRP7g=/?share_link_id=778828513686">LINK TO MIRO</a>
     </div>
 <img src="images/CaseStudy-Travelate/05-design/vector-userFlow.svg" class="w-100 py-0">
 
@@ -815,7 +799,7 @@
 
   <div class="d-flex justify-content-between align-items-center col-md-12 mb-3 py-1">
     <h4 class="py-1">Mapping the User Flow</h4>
-    <p style="border-bottom: solid #2e2e2e 1px;">LINK TO MIRO</p>
+    <a class="linkto" target="_blank" href="https://miro.com/app/board/uXjVOnbRP7g=/?share_link_id=778828513686">LINK TO MIRO</a>
     </div>
 <img src="images/CaseStudy-Travelate/05-design/vector-userFlow.svg" class="w-100 py-0">
 
@@ -823,8 +807,9 @@
 </div>
 
 <!--Wireframes--> 
-
+</div>
 <!--06 Usability Testing--> 
+<div id="list-item-6">
 <div class="bgPadding">
   <div class="container col-xxl-12">
     <div class="d-flex justify-content-between col-md-12 mb-3">
@@ -853,7 +838,7 @@
     <div class="col-md-12 mb-3  pb-5">
     <div class="d-flex justify-content-between align-items-center col-md-12 mb-3">
       <h4>Test Results</h4>
-      <p style="border-bottom: solid #2e2e2e 1px;">LINK TO MIRO</p>
+      <a class="linkto" target="_blank" href="https://miro.com/app/board/uXjVOnbRP7g=/?share_link_id=778828513686">LINK TO MIRO</a>
       </div>
       <h5>The testing showed that I had gone in the wrong direction. Majority of the tasks were at 50% or lower success rate which lead me to gather more information on what the users were really wanting.</h5>
   <img src="images/CaseStudy-Travelate/06-usabilityTesting/vector-testResults.svg" class="w-100 py-5">
@@ -861,7 +846,7 @@
 <div class="col-md-12 mb-3">
   <div class="d-flex justify-content-between align-items-center col-md-12 mb-3">
     <h4>Testing Insights</h4>
-    <p style="border-bottom: solid #2e2e2e 1px;">LINK TO MIRO</p>
+    <a class="linkto" target="_blank" href="https://miro.com/app/board/uXjVOnbRP7g=/?share_link_id=778828513686">LINK TO MIRO</a>
     </div>
     <h5>The insights showed that my initial defining of features was poorly executed and needed to be re evaluated. Focusing on the key pain points, I started iterating on the design.</h5>
 <img src="images/CaseStudy-Travelate/06-usabilityTesting/img-testingInsights.png" class="w-100 py-5">
@@ -949,8 +934,9 @@
 </div>
 
 <!--Iterations--> 
-
+</div>
 <!--07 Interactive Prototype--> 
+<div id="list-item-7">
 <div class="bgPadding">
   <div class="container col-xxl-12">
     <div class="d-flex justify-content-between col-md-12 mb-3">
@@ -1000,7 +986,7 @@
       <div class="d-flex row justify-content-center align-items-center">
         <img src="images/CaseStudy-Travelate/banner/img-banner.png" class="w-50 py-5 m-auto">
         <div class="card-button px-0 justify-content-center align-items-center">
-          <button href="url">Link to Figma Mid-Fi Prototype</button>
+          <button><a style="text-decoration: none; color: white;" target="_blank" href="https://www.figma.com/proto/GggDa0dKhEeW0UiMT8SJk8/Week-3-Homework-Low-Fidelity-Wire-Frame-(Copy)?page-id=0%3A1&node-id=147%3A17256&viewport=800%2C726%2C0.05&scaling=scale-down&starting-point-node-id=147%3A17256&show-proto-sidebar=1">Link to Figma Mid-Fi Prototype</a></button>
       </div>
       </div>
 
@@ -1012,9 +998,9 @@
 
 
 <!--07 Interactive Prototype--> 
-
+</div>
 <!--08 Final Thoughts--> 
-<div class="bgTravelate">
+<div class="bgTravelate" id="list-item-8">
   <div class="container col-xxl-12">
     <h2><span class="sectionTitle">08 Final Thoughts</span></h2>
 
@@ -1042,6 +1028,8 @@
 
 
 <!--08 Final Thoughts--> 
+</section>
+
 
     <footer class="backgroundLogo">
         <h2>Lets Connect!</h2>

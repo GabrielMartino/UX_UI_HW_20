@@ -19,7 +19,7 @@ header{
 }
 
 .banner1 img{
-  width: 60%;
+  width: 100%;
 }
 
 
@@ -88,6 +88,7 @@ letter-spacing: 0.0125em;
 cursor: pointer;
 position: relative;
 transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 
 
@@ -206,7 +207,7 @@ button:hover:before {
 }
 
 
-.nav, a{
+.navHov{
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -217,7 +218,7 @@ button:hover:before {
 
 }
 
-.nav, a:hover {
+.navHov:hover {
 animation: menuHover;
 color: #2e2e2e !important;
 
@@ -292,6 +293,7 @@ footer{
 
 .tiltElement2{
   padding-bottom: 8px;
+ 
 }
 
 .backgroundLogo{
@@ -577,21 +579,34 @@ line-height: 200%;
 letter-spacing: 0.005em;
 }
 
-
-
-
-.sidebar a{
-  font-family: 'Quicksand';
+.linkto{
+  font-family: 'Century Gothic';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.0015em;
+  line-height: 200%;
+  /* or 32px */
+  
+  letter-spacing: 0.005em;
+  color: #2e2e2e;
+  text-decoration: none;
+  border-bottom: solid #2e2e2e 1px;
+  padding-top: 5px;
+}
+
+
+.sideNavItem{
+  font-family: 'Quicksand';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.0015em;
   
   color: #2E2E2E;
 }
 
-.sidebar a:hover{
+.sideNavItem:hover{
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 700;
@@ -602,24 +617,24 @@ letter-spacing: 0.005em;
   color: #EE5E7B;
 }
 
-@media only screen and (max-width: 1000px) {
- 
-  .wrapper{
-    display: grid;
-  margin:auto;
-    grid-row-gap: 64px;
-    grid-column-gap: 64px;
-    grid-template-columns: 16px 1fr 16px;
-    grid-template-rows: 5fr;
-  min-width: 1316px;
-    max-width: 1920px;
-    grid-template-areas:
-    ". hero ."
-    ". card1 ."
-    ". card2 ."
-    ". card3 ."
-    ". card4 ."
-  ;
-  }
-
+.list-group-item{
+  border:none !important;
+  background-color: none !important;
+  border-color: none !important;
+  border-radius:none !important;
 }
+
+.active{
+  background-color: none !important;
+  border-color: none !important;
+  color: #EE5E7B !important;
+}
+
+.list-group{
+  --bs-list-group-active-bg:none;
+  --bs-list-group-border-radius:none !important;
+}
+
+
+
+
